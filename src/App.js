@@ -7,6 +7,7 @@ import Detail from "./components/Detail";
 import { createContext, useContext, useState } from "react";
 import Login from "./components/Login";
 import Singup from "./components/Singup";
+import Footer from "./components/Footer";
 
 const AppState = createContext();
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/singup" element={<Singup />} />
       </Routes>
+      <Footer />
       
     </div>
     </AppState.Provider>
